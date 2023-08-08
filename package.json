@@ -1,0 +1,19 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A small weather app dependent on weather api. (https://www.weatherapi.com/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/System-out-print-Zain/Weather-App.git"
+  },
+  "author": "Zain Mustafa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/System-out-print-Zain/Weather-App/issues"
+  },
+  "homepage": "https://github.com/System-out-print-Zain/Weather-App#readme"
+}
