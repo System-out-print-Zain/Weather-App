@@ -50,15 +50,19 @@ html, body {
     margin-top: 50px;
 }
 
-.celc-far > button {
+.celc, .far {
     padding: 10px;
     background-color: transparent;
-    border-radius: 10px;
-    border-width: 1px;
+    font-size: 20px;
+    border: none;
 }
 
 .celc-far > button:hover{
     cursor: pointer;
+}
+
+.selected {
+    border-bottom: 2px gold solid;
 }
 
 .weather-info-card{
