@@ -4,7 +4,8 @@
   "description": "A small weather app dependent on weather api. (https://www.weatherapi.com/)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,20 @@
   "bugs": {
     "url": "https://github.com/System-out-print-Zain/Weather-App/issues"
   },
-  "homepage": "https://github.com/System-out-print-Zain/Weather-App#readme"
+  "homepage": "https://github.com/System-out-print-Zain/Weather-App#readme",
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "prettier": "3.0.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "style-loader": "^3.3.3",
+    "webpack-dev-server": "^4.15.1"
+  }
 }
