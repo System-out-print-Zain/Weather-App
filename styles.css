@@ -41,6 +41,43 @@ html, body {
     width: 300px;
 }
 
+/*Main Styling*/
+
+.celc-far{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.celc-far > button {
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.celc-far > button:hover{
+    cursor: pointer;
+}
+
+.weather-info-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 10px;
+}
+
+.city-name{
+    font-size: 50px;
+    margin: 0px;
+}
+
+.temp {
+    margin: 0px;
+}
+
 /*Footer Styling*/
 
 .github-icon {
