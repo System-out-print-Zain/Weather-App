@@ -65,6 +65,11 @@ html, body {
     border-bottom: 2px gold solid;
 }
 
+.error {
+    margin: 0px;
+    color: red;
+}
+
 .weather-info-card{
     display: flex;
     align-items: center;
