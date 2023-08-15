@@ -5,6 +5,7 @@ const DOM = {
   cityNameDOM: document.querySelector(".city-name"),
   temperatureDOM: document.querySelector(".temp"),
   errorMessageDOM: document.querySelector(".error"),
+
   displayWeather: function (data, unit) {
     this.errorMessageDOM.textContent = "";
     this.cityNameDOM.textContent = data.location.name;
@@ -12,6 +13,7 @@ const DOM = {
       this.temperatureDOM.textContent = `${data.current.temp_c}°C`;
     else this.temperatureDOM.textContent = `${data.current.temp_f}°F`;
   },
+
   displayError: function () {
     this.errorMessageDOM.textContent =
       "Please enter the name of an existing city";
@@ -21,10 +23,12 @@ const DOM = {
 const WeatherAPI = {
   baseURL:
     "https://api.weatherapi.com/v1/current.json?key=ed7aaa10e35a452280c205506230808&q=",
+
   getWeatherInfo: async function (query) {
     const fullURL = `${this.baseURL}${query}`;
     const response = await fetch(fullURL);
     const data = await response.json();
+
     if (Object.hasOwn(data, "error")) return "Invalid Query";
     else return data;
   },
