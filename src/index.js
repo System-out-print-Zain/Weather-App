@@ -1,5 +1,5 @@
 "strict mode";
-import "../styles.css";
+import "./styles.css";
 
 const DOM = {
   cityNameDOM: document.querySelector(".city-name"),

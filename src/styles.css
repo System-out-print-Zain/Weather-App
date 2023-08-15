@@ -1,0 +1,102 @@
+/*General Layout*/
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+:root {
+    --main-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--main-font);
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 80px 1fr 50px;
+}
+
+/*Header Styling*/
+
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#location-input {
+    width: 300px;
+}
+
+/*Main Styling*/
+
+.celc-far{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.celc, .far {
+    padding: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+}
+
+.celc-far > button:hover{
+    cursor: pointer;
+}
+
+.selected {
+    border-bottom: 2px gold solid;
+}
+
+.error {
+    margin: 0px;
+    color: red;
+}
+
+.weather-info-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 10px;
+}
+
+.city-name{
+    font-size: 50px;
+    margin: 0px;
+}
+
+.temp {
+    margin: 0px;
+}
+
+/*Footer Styling*/
+
+.github-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
