@@ -8,7 +8,7 @@ module.exports = {
   mode: "production",
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html",
+      template: "./src/index.html",
     }),
     new MiniCssExtractPlugin(),
     new CleanWebpackPlugin(),
