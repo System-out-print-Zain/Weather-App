@@ -2,11 +2,19 @@
 import "../styles.css";
 
 const DOM = {
-  displayWeather: function (data, unit, query) {
-    console.log(data, unit, query);
+  cityNameDOM: document.querySelector(".city-name"),
+  temperatureDOM: document.querySelector(".temp"),
+  errorMessageDOM: document.querySelector(".error"),
+  displayWeather: function (data, unit) {
+    this.errorMessageDOM.textContent = "";
+    this.cityNameDOM.textContent = data.location.name;
+    if (unit === "celcius")
+      this.temperatureDOM.textContent = `${data.current.temp_c}°C`;
+    else this.temperatureDOM.textContent = `${data.current.temp_f}°F`;
   },
   displayError: function () {
-    console.log("failure");
+    this.errorMessageDOM.textContent =
+      "Please enter the name of an existing city";
   },
 };
 
@@ -63,7 +71,7 @@ function activateUI() {
     // Tell the DOM object to the perform the appropriate action
 
     if (apiResponse === "Invalid Query") DOM.displayError();
-    else DOM.displayWeather(apiResponse, unit, query);
+    else DOM.displayWeather(apiResponse, unit);
   });
 }
 
