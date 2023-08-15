@@ -28,7 +28,7 @@ const WeatherAPI = {
 // Event Listeners
 
 function activateUI() {
-  const searchBar = document.querySelector(".location-input");
+  const searchBar = document.querySelector("#location-input");
 
   let unit = "celcius";
 
